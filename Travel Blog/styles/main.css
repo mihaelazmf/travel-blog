@@ -1,0 +1,255 @@
+
+
+div {
+	box-sizing: border-box;
+	float: left;
+	
+}
+
+
+.parent {
+	margin-bottom: 2px;
+	border: none;
+	padding: 5px;
+	width: 100%;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+
+.parent>div {
+	padding: 5px;
+}
+
+#logo {
+	margin-bottom: 5px;
+	border: none;
+}
+
+#title {
+	max-width: 100%;
+	margin-top: 40px;
+	margin-bottom: 70px;
+	float: right;
+	width: 100%;
+	height: 100px;
+	font-family: 'Amatic SC', cursive;
+	font-size: 80px;
+	border: none;
+	text-align: center;
+	
+	
+}
+img {
+	 width: 100%;
+    height: auto;
+}
+@media (max-width: 750px) {
+/* Styles for screen with max width of 720px */
+header {
+        height: auto;
+    }
+    #title {
+        margin: 0;
+        font-size: 40px;
+    }
+}
+@media (max-width: 320px) {
+/* Styles for screen with max width of 320px */
+header {
+        height: auto;
+    }
+    #title {
+        margin: 0;
+        font-size: 40px;
+    }
+}
+.nav {
+	width: 100%;
+	border: none;
+}
+ 
+ul {
+	border-radius: 5px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #6E8898;
+	text-align: center;
+	
+}
+li {
+	float: left;  
+	position: relative; 
+}
+ a {
+	 text-decoration: none;
+	 color: black;
+ }
+li a {
+    display: inline-block;
+	text-align: center;
+    color: #fff;
+    padding: 14px 16px;
+	font-size: 17px;
+	
+	
+}
+li a:hover {
+    background-color: #2E5266;
+}
+
+@media (max-width: 510px) {
+ ul li {
+      width: 100%;
+	
+}
+}
+
+@media (max-width: 280px) {
+ ul li {
+      width: 100%;
+	
+}
+}
+
+#menu > li ul {
+	position: absolute;
+	left: -1px;
+	top: 27px;
+	width: 150px;
+	display: none;
+	padding-top: 10px;
+}
+
+#menu > li:hover ul {
+	display: block;
+}
+
+#menu > li ul > li {
+	border-top: 1px solid black;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
+}
+
+#sidebar {
+	float: right;
+	width: 21%;	
+	margin-right: 2%;
+	margin-left: 2%;
+	border: 1px solid grey;
+	border-radius: 5px;
+	
+
+}
+
+
+#content {
+	width: 70%;
+	margin-left: 1%;
+	margin-right: 2%;	
+	margin-bottom:3%;
+}
+
+@media (max-width: 732px){
+	.parent > div {
+		width: 100%!important;
+		float: left!important;
+	}
+	
+	#sidebar, #copyright, #calendar{
+		margin-bottom: 5px;
+	}
+	
+	
+	#content {
+		margin-left: 0;
+	}
+
+}
+
+
+h2 {
+
+	font-family: 'Montserrat', sans-serif;
+	text-align: center;
+	font-size: 17px;
+
+	
+}
+
+p {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 13px;
+	text-align: center;
+}
+
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+hr:after {
+    display: inline-block;
+    position: relative;
+    top: -0.7em;
+    font-size: 1.5em;
+    padding: 0 0.25em;
+    background: white;
+	
+}
+
+#calendar{
+    width: 130px;
+    height: 180px;
+    background-color: cornflowerblue;
+    color: #fff;
+    border-radius: 5%;
+    box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
+	margin-top: 10px;
+	
+	margin-right: 2%;
+	margin-left: 10%;
+}
+@media (max-width: 732px){
+	#calendar {
+		margin-right: 2%;
+		margin-left: 2%;
+	}
+}
+
+#calendar>p{
+    font-family: Verdana, Arial, sans-serif;
+    padding: 10px 0;
+    margin: 0;
+    color: #fff;
+    text-align: center;
+}
+
+#calendar-day{
+    font-size: 16px;
+}
+
+#calendar-month-year{
+    font-size: 14px;
+}
+
+#calendar-date{
+    font-size: 64px;
+    padding-top: 10px;
+    padding-bottom: 0;
+}
+
+#footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #D3D0CB;
+    color: #1C4954;
+    text-align: center;
+	border-radius: 10px;
+}

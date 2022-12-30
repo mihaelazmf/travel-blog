@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<title> Calculator Tip Restaurant - Mihaela Zamfir </title>
+		<title>Mihaela Zamfir</title>
+		<link rel="stylesheet" href="styles/calculator.css">
+		<link rel="shortcut icon" href="images/index.png">
+		<link href="https://fonts.googleapis.com/css?family=Amatic+SC:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		
+	</head>
+	
+	<body>
+		<div id="heather" class="parent">
+			<!--title-->
+			<div id="title" class= "parent" > <a href="#">Mihaela Zamfir</a></div>
+			<!--end title-->
+			
+			<!--Menu 1 -->
+			
+			<div class="nav">
+				
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="aboutme.html">About me</a></li>
+					<li><a href="travel.html">Travel</a><li>
+					<li><a href="calculator.html">Calculator Tips</a></li>
+					<li><a href="contact.html">Contact</a></li>
+				</ul>
+					
+			</div>
+		<div id="main-content" class="parent">
+			<div id="container">
+				<h1>Calculator Tip Restaurant</h1>
+				<hr></hr>
+				<div id="calculator">
+					<form>
+						<p>Total nota</p>
+						 <input id="totalnota" type="text" placeholder="Total Nota" > lei
+
+						<p>Cum ti s-a parut servirea?</p>
+						<select id="servire">
+							<option  selected value="0" >-- Alege o varianta --</option>
+							<option value="0.3">30&#37; &#45; Excelenta</option>
+							<option value="0.2">20&#37; &#45; Foarte buna</option>
+							<option value="0.15">15&#37; &#45; Ok </option>
+							<option value="0.1">10&#37; &#45; Proasta</option>
+							<option value="0.05">5&#37; &#45; Foarte proasta</option>
+						</select>
+						<p>Cate persoane impart nota de plata? </p>
+						<input id="numarpersoane" type="text" placeholder="Numar de persoane"> pers.
+						<button type="button" id="calculeaza">Calculeaza!</button>
+						<input type="button" onclick="submit()" value="Reset form">	
+					
+					</form>	
+
+			</div>
+			<!--calculator end-->
+			<div id="totalTip">
+			<br />
+			<span id="tip">0.00</span> lei
+			<small id="fiecare">fiecare</small>
+			</div>
+			<!--totalTip end-->
+
+		</div>
+		<!--container end-->
+		
+		<div id="footer" class="parent">
+		
+			<div id="copyright"><small>&copy; 2018 Mihaela Zamfir</small></div>
+			
+		</div>
+	
+		</div>
+		<script type="text/javascript" src="calculatorscripts.js"></script>
+	</body>
+</html>
+
